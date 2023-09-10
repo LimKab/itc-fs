@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to Ttop, rgb(117, 132, 132), white);
+  font-family: 'Ubuntu', sans-serif;
+  height: 100vh;
+  background-color: rgb(71, 71, 71);
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  align-items: center;
+  background-color: rgb(155, 173, 189);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+  padding: 50px;
+}
+
+.fade {
+  animation: fade 1s ease-in 1s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 0 50px rgb(155, 173, 189);
+  letter-spacing: 0.25rem;
+}
+
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(33, 33, 33);
+  top: 0;
+  position: fixed;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  width: 30%;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  color: rgb(234, 255, 170);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  height: 1px;
+  width: 0px;
+  position: absolute;
+  background-color: aliceblue;
+  bottom: 0;
+  left: 50%;
+  transition: all ease-in-out 0.2s;
+}
+
+nav a:hover {
+  background-color: gray;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+nav a:hover::after {
+  width: 96%;
+  left: 2%;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+
+div a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  color: aliceblue;
+  font-size: 2.5rem;
+  transition: color .2s;
+}
+
+div a:hover {
+  color: rgb(234, 255, 170);
+}
+
+.about {
+  align-items: center;
+  color: rgb(155, 173, 189);
+  padding-top: 30px;
+  width: 80%;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  color: aliceblue;
+  padding-top: 20px;
+}
+
+.btn {
+  display: flex;
+  text-align: center;
+  float: left;
+  justify-content: left;
+}
+
+fieldset {
+  border: 1px solid aliceblue;
+  border-radius: 10px;
+  margin-top: 130px;
+}
+
+legend {
+  font-weight: bold;
+  color: rgb(155, 173, 189);
+  font-size: 2rem;
+  margin: 2rem 0 1.3rem 0;
+}
+
+label {
+  display: block;
+  padding: 0.3rem;
+  color: aliceblue;
+}
+
+textarea {
+  height: 8rem;
+  width: 20rem;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+button {
+  font-size: 1rem;
+  margin: 1.5rem 38%;
+  background-color: rgb(234, 255, 170);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+}
+
+button:hover {
+  background-color: aliceblue;
+}
+
+input {
+  display: block;
+  margin-bottom: 1rem;
+  width: 20rem;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+footer {
+  color: aliceblue;
+  padding-bottom: 10px;
+}

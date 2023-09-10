@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body class="page-wrapper">
+    <form action="https://formspree.io/f/moqodrpw" method="post">
+        <fieldset>
+            <legend>contact me!</legend>
+            <label for="firstname">What's your first name?</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <label for="lastname">last name</label>
+            <input type="text" id="lastname" name="lastname">
+            <label for="phone">phone number</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="email">email</label>
+            <input type="text" id="email" name="email" required>
+            <label for="date">birthday</label>
+            <input type="date" id="date" name="date">
+            <label for="comment" required>comment</label>
+            <textarea type="text" id="comment" name="comment" placeholder="Tell me your darkest secrets!"
+                required></textarea>
+        </fieldset>
+        <button type="submit">submit</button>
+    </form>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <footer></footer>
+    <script src="../js/footer.js"></script>
+</body>
+
+</html>
